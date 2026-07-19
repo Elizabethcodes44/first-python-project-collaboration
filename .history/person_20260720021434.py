@@ -1,2 +1,0 @@
-class Person:
-    def __
