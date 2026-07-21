@@ -1,6 +1,7 @@
 from person import Person
 
 class Student(Person):
+    
     def __init__(self, name, age, email, student_Id, course, level, grade):
         super().__init__(name, age, email)
         self.student_Id = student_Id

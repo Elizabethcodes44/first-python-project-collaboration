@@ -9,6 +9,3 @@ class Person:
         print(f"Name: {self.name}")
         print(f"Name: {self.age}")
         print(f"Name: {self.email}")
-
-
-
