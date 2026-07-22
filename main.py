@@ -181,10 +181,12 @@ while True:
                 print("Please enter a valid numeric Grade.")
             else:
                 print("Student not found.")
+    elif choice == 7:
+                print("Are you sure you want to exit?")
+                if exit_sms():
+                    break
+                else:
+                   print("Returning to the main menu...")
+      
     
-        elif choice == 7:
-            print("Are you sure you want to exit?")
-            if exit_sms():
-                break
-            else:
-               print("Returning to the main menu...")
+        
