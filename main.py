@@ -156,24 +156,23 @@ while True:
 
     elif choice == 5:
         search_id = input("Enter Student ID: ")
-        sms.find_student = student(search_id)
+        student = sms.find_student(search_id)
         if student:
             print("Student Found!")
             student.display_info()    
         else:
             print("Student not found")
 
-    elif choice == "6":
+    elif choice == 6:
         student_id = input("Enter Student ID: ")
-        sms.find_student = student(student_id)
-    
+        student = sms.find_student(student_id)
         if student:
           while True:
             new_grade = input("Enter new Grade: ")
             try:
               new_grade = float(new_grade)
               if 0 <= new_grade <= 100:
-                student.gpa = new_grade
+                student.update_grade = new_grade
                 print("Grade updated successfully.")
                 break
               else:

@@ -29,8 +29,8 @@ class SchoolManagementSystem:
           teacher.display_info()
           print("-" * 30)
 
-    def find_student(self, student_id):
+    def find_student(self, student_Id):
      for student in self.students:
-        if student.student_id.lower() == student_id.lower():
+        if student.student_Id.lower() == student_Id.lower():
             return student
      return None
