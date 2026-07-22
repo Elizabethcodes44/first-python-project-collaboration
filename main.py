@@ -99,13 +99,13 @@ while True:
     print("=" * 30)
 
     try:
-        choice = int(input("Enter option 1-5: "))
+        choice = int(input("Enter option 1-7: "))
 
-        if choice < 1 or choice > 5:
-            print("Please input numbers from 1-5")
+        if choice < 1 or choice > 7:
+            print("Please input numbers from 1-7")
             continue
     except ValueError:
-        print("Please input numbers from 1-5")
+        print("Please input numbers from 1-7")
         continue
 
     print("\n")
