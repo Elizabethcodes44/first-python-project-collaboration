@@ -72,18 +72,6 @@ students = [student1, student2, student3, student4, student5]
 
 
 #step 10
-# Function to display the menu
-def print_menu():
-    print("\n===== STUDENT MANAGEMENT SYSTEM =====")
-    print("1. Display All Students")
-    print("2. Search Student by ID")
-    print("3. Update Student GPA")
-    print("4. Display Teacher Information")
-    print("5. Count Total Students")
-    print("6. Add New Student")
-    print("7. Exit")
-
-
 # Menu System
 
 def exit_sms ():
@@ -105,7 +93,9 @@ while True:
     print("2. Add Teacher")
     print("3. Display All Students")
     print("4. Display All Teachers")
-    print("5. Exit")
+    print("5. Search Student")
+    print("6. Update Grade")
+    print("7. Exit")
     print("=" * 30)
 
     try:
@@ -179,17 +169,17 @@ while True:
     
         if student:
           while True:
-            new_grade = input("Enter new GPA: ")
+            new_grade = input("Enter new Grade: ")
             try:
               new_grade = float(new_grade)
               if 0 <= new_grade <= 100:
                 student.gpa = new_grade
-                print("GPA updated successfully.")
+                print("Grade updated successfully.")
                 break
               else:
-                print("GPA must be between 0 and 5.")
+                print("Grade must be between 0 and 100.")
             except ValueError:
-                print("Please enter a valid numeric GPA.")
+                print("Please enter a valid numeric Grade.")
             else:
                 print("Student not found.")
     
